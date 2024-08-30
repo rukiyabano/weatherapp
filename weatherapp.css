@@ -1,0 +1,138 @@
+
+  * {
+    margin: 0;
+    padding: 0; 
+ }
+ body {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: url("https://media.istockphoto.com/id/1004682020/photo/clouds-in-the-blue-sky.jpg?s=612x612&w=0&k=20&c=bsR5R7b8QXpXNJkVKvKFCPYLXvuGj2I7fZHwB63xvi8=");
+     background-size: cover;
+ }
+ .container {
+     border: 2px solid black;
+     background-color: lightblue;
+     max-width: 400px;
+     min-height: 400px;
+     border-radius: 10px;
+     box-shadow: 0 10px 10px black;
+ }
+ .header {
+     margin: 10px;
+     max-width: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #input {
+     font-size: 20px;
+     min-height: 35px;
+     width: 100%;
+     border: none;
+     background-color: lightblue;
+     border-bottom: 2px solid black;
+ }
+ #input:focus {
+     outline: none;
+ }
+ .btn {
+     font-size: 16px;
+     margin: 0 10px;
+     min-height: 35px;
+     min-width: 80px;
+     border-radius: 5px;
+     color: white;
+     background-color: #011420;
+ }
+ .main {
+     max-width: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+     flex-direction: column;
+ }
+ .city {
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+ .condition {
+     font-size: 20px;
+ }
+ .img-temp {
+     display: flex;
+ }
+ #temp-img {
+     margin-top: 20px;
+     margin-right: 5px;
+     height: 80px;
+     width: 70px;
+ }
+ .temp {
+     margin-top: 20px;
+     font-size: 50px;
+ }
+ .feels {
+     font-size: 18px;
+ }
+ .footer {
+     display: flex;
+     margin-top: 50px;
+     margin: 15px;
+     justify-content: space-evenly;
+ }
+ .humidity-main-container, .wind-main-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .humidity-container {
+     width: 90px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .wind-container {
+     width: 110px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .fa-droplet, .fa-wind {
+     font-size: 20px; 
+ }
+ .humidity-word, .wind-word {
+     font-size: 18px;
+ }
+ .humidity, .wind {
+     font-size: 20px;
+     font-weight: bold;
+ }
+ .spinner-container {
+     display: none;
+     justify-content: center;
+     align-items: center;
+ }
+ .spinner {
+     width: 40px;
+     height: 40px;
+     border: 8px solid rgba(0,0,0,0.1);
+     border-top: 8px solid red;
+     border-radius: 50%;
+     animation: spin 1s linear infinite;
+ }
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg);
+     }
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+ @media screen and (max-width: 450px) {
+     .container {
+         min-height: 400px;
+         min-width: 300px;
+     }
+ }

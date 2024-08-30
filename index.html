@@ -1,0 +1,52 @@
+
+     <!DOCTYPE html>
+     <html lang="en">
+         <head>
+             <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+             <link rel="stylesheet" href="weatherapp.css">
+             <title>Weather APP</title>
+         </head>
+         <body>
+             <div class="container">
+                 <div class="header">
+                     <input type="text" placeholder="City" id="input" />
+                     <button class="btn">Search</button>
+                 </div>
+                 <div class="spinner-container">
+                     <div class="spinner"></div>
+                 </div>
+                 <div class="second-container">
+                     <div class="main">
+                         <div class="city">City Name</div>
+                         <div class="condition">Condition</div>
+                         <div class="img-temp">
+                             <img src="https://cdn-icons-png.flaticon.com/512/10127/10127236.png" id="temp-img" alt="Weather Icon">
+                             <div class="temp">Temperature</div>
+                         </div>
+                         <div class="feels">Feels Like</div>
+                     </div>
+                     <div class="footer">
+                         <div class="humidity-main-container">
+                             <div class="humidity-container">
+                                 <i class="fa-solid fa-droplet"></i>
+                                 <div class="humidity-word">Humidity</div>
+                             </div>
+                             <div class="humidity"></div>
+                         </div>
+                         <div class="wind-main-container">
+                             <div class="wind-container">
+                                 <i class="fa-solid fa-wind"></i>
+                                 <div class="wind-word">Wind Speed</div>
+                             </div>
+                             <div class="wind"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <script src="weatherapp.js"></script>
+         </body>
+     </html>
+     
